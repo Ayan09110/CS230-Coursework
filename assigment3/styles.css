@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body{
+    background-color:lightblue;
+}
+nav{
+    margin: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-image: url(apple-rxd.jpeg);
+    height: 500px;
+}
+.top{
+    background-color: blueviolet;
+}
+.start{
+    background-color: green;
+}
+.pause{
+    background-color: orange;
+}
+.stop{
+    background-color: red;
+}
+.btn:hover:not(:disabled) {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.btn{
+    margin: 5px;
+    font-family: 'Roboto';
+    color: white;
+}
+#timer{
+    color: white;
+    font-family: 'Orbitron';
+}
+#timer:hover{
+    color: yellow;
+}
+#timer.low-time{
+    color: red;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
